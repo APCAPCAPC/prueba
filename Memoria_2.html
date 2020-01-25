@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
+        <link rel="stylesheet" type="text/css" href="CSS/table.css">
+        <script src="jquery/jquery.min.js"></script>
+        <script src="JAVASCRIPT/left_menu.js"></script>
+        <script src="JAVASCRIPT/hover_mose.js"></script>
+        <script src="JAVASCRIPT/loading_gif.js"></script>
+        <title>Memoria 2</title>
+    </head>
+    <body>
+        <div class="loader"></div>
+        <div id="menu">
+            <div class="menu">
+                <h1 class="menu_h1">MENU</h1>
+                <a href="index.html"><div>Portada</div></a>
+                <a href="Objetivo.html"><div>Objectiu</div></a>
+                <a href="Herramientas_i_materiales.html"><div>Eines i materials</div></a>
+                <a href="Planos.html"><div>Planols</div></a>
+                <a href="Videos.html"><div>Videos</div></a>
+                <h1 class="menu_h1">Memories descriptives</h1>
+                <a onmouseout="javascript:change('Memoria_1','Memoria 1')" onmouseover="javascript:change('Memoria_1','Feta per: Victor i Andres')" href="Memoria_1.html"><div id="Memoria_1">Memoria 1</div></a>
+                <a onmouseout="javascript:change('Memoria_2','Memoria 2')" onmouseover="javascript:change('Memoria_2','Feta per: Arnau i Alex G.')" href="Memoria_2.html"><div id="Memoria_2">Memoria 2</div></a>
+            </div>
+        </div>
+        <div id="page">
+            <div class="cabecera">
+                <a href="javascript:opened()"><img src="IMAGENES/menu.png"></a>
+            </div>
+            <div class="contenido">
+                <div class="title">Memoria descrpiptiva</div>
+                <div style="margin-top:-10px;font-size: 30px;">Hecha por Alex G. y Arnau</div>
+                <br><br>
+                <br><br>
+                <br><br>
+                <table id="table">
+                    <tr>
+                        <td><img src="IMAGENES/tecnoC_AA/AA_1.jpg"></td>
+                        <td colspan="2"><span class="title">Paso 1</span><br>Al principio de todo hemos cortado el trozo de madera,desde una esquina y con un angulo de 45º.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="title">Paso 2</span><br>Seguidamente, hemos montado la base. Dos palos paralelos colocados encima de tres mas pequeños.</td>
+                        <td colspan="2"><img src="IMAGENES/tecnoC_AA/AA_2.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td><img style="max-height: 310px;" src="IMAGENES/tecnoC_AA/AA_3.1.jpg"></td>
+                        <td><span class="title">Paso 3</span><br>Seguidamente hemos puesto un palo de forma vertical en el medio del primer palo largo. Soportado por dos palos inclinados.Seguidamente, hemos hecho lo mismo en el otro lado.</td>
+                        <td><img src="IMAGENES/tecnoC_AA/AA_3.2.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td><img style="max-height: 220px;" src="IMAGENES/tecnoC_AA/AA_4.1.jpg"></td>
+                        <td><img src="IMAGENES/tecnoC_AA/AA_4.2.jpg"></td> 
+                        <td><span class="title">Paso 4</span><br>Hemos puesto un palo entre los dos palos verticales, y tambien hemos puesto el engranaje. Despues pusimos dos palos largos en los extremos de la catapulta. Les pusimos las cuerdas tensoras, que tambien las atamos al palo horizontal.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="title">Paso 5</span><br>Lo unico que nos faltaba era poner el engranaje pequeño, debajo del grande. Un pequeño palo en el extremo de la cataputla, que sujetase un palito, que sujeta otro grande, para que no se mueva el engranaje.</td>
+                        <td><img style="max-height: 310px;" src="IMAGENES/tecnoC_AA/AA_5.1.jpg"></td>
+                        <td><img src="IMAGENES/tecnoC_AA/AA_5.2.jpg"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="down"></div>
+        <div class="bottom"></div>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+.slider img{
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+}
+.slider{
+    background-color: white;
+    height: auto;
+    width: 100%;
+    right: 40%;
+    position: absolute;
+}
+.slider #img_1{
+    opacity: 1;
+}

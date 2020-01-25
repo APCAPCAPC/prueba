@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portada</title>
+	<link rel="stylesheet" type="text/css" href="CSS/portada.css">
+	<link rel="icon" type="webp" href="imagenes/info.webp">
+</head>
+<body bgcolor="red" id="fondo">
+	<div id="loader"><div class="loader"></div></div>
+	<div id="popup" class="popup">
+		<div class="background_popup"></div>
+		<div class="text">
+			<div class="text_popup">
+				<h1 class="titulo">La Catapulta</h1>
+				<p class="parrafo-font">Este es un proyecto que nos costó hacer. Esperamos que os guste.</p>
+				<br>
+				<button class="boton" onclick="javascript:clean_popup();console.log('Cleaning popup')">Continuar</button>
+			</div>
+		</div>
+	</div>
+	<div style="height: 100px; background-color: red;"></div>
+	<div style="height:900px;display: flex;justify-content: center; background-color: red; width: 100%;">
+		<div style="width: 75%; background-color: blue;text-align: center;">
+			<div style="height: 40px; background-color: green;"></div>
+			<div class="titulo" class="titulo-font"><h1>LA CATAPULTA</h1></div>
+			<img class="img" src="imagenes/catapulta_1.jpg">
+			<br><br><br><br>
+			<div><a href="Objetivo.html"><button style="width:260px;" class="boton">Ir al objetivo</button></a></div>
+		</div>
+	</div>
+	<div style="background-color: red; width: 100%; height: 100px"></div>
+
+<script type="text/javascript">
+	var b = 1;
+	function clean_popup() {
+		var a = document.getElementById('popup');
+		b = b - 0.01;
+		console.log("opacity of popup: " + b);
+		a.style.opacity = b;
+		if (b <= 0) {
+			console.log("finish cleaning popup")
+			document.getElementById("popup").innerHTML="";
+		} else {setTimeout("clean_popup()",7)}
+	}
+
+</script>
+<script src="jquery/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+    setTimeout("$('.loader').fadeOut('slow');console.log('cleaning loading gif')",400);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
+        <link rel="stylesheet" type="text/css" href="CSS/table.css">
+        <script src="jquery/jquery.min.js"></script>
+        <script src="JAVASCRIPT/left_menu.js"></script>
+        <script src="JAVASCRIPT/hover_mose.js"></script>
+        <script src="JAVASCRIPT/loading_gif.js"></script>
+        <title>Planos</title>
+    </head>
+    <body>
+        <div class="loader"></div>
+        <div id="menu">
+            <div class="menu">
+                <h1 class="menu_h1">MENU</h1>
+                <a href="index.html"><div>Portada</div></a>
+                <a href="Objetivo.html"><div>Objetivo</div></a>
+                <a href="Herramientas_i_materiales.html"><div>Herraminetas i materiales</div></a>
+                <a href="Planos.html"><div>Planos</div></a>
+                <a href="Videos.html"><div>Videos</div></a>
+                <h1 class="menu_h1">Memorias descriptivas</h1>
+                <a onmouseout="javascript:change('Memoria_1','Memoria 1')" onmouseover="javascript:change('Memoria_1','Hecha por: Victor i Andres')" href="Memoria_1.html"><div id="Memoria_1">Memoria 1</div></a>
+                <a onmouseout="javascript:change('Memoria_2','Memoria 2')" onmouseover="javascript:change('Memoria_2','Hecha por: Arnau i Alex G.')" href="Memoria_2.html"><div id="Memoria_2">Memoria 2</div></a>
+            </div>
+        </div>
+        <div id="page">
+            <div class="cabecera">
+                <a href="javascript:opened()"><img src="IMAGENES/menu.png"></a>
+            </div>
+            <div class="contenido">
+                <h1 class="title">Planos</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><img src="IMAGENES/planos_1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="IMAGENES/planos_2.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="IMAGENES/planos_3.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="IMAGENES/planos_4.jpg"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="down"></div>
+        <div class="bottom"></div>
+    </body>
